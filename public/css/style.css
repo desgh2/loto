@@ -1,0 +1,729 @@
+[v-cloak] {
+  display: none;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');*/
+@font-face {
+  	font-family: Nunito Light;
+  	src: url(../fonts/Nunito-Light.ttf);
+}
+@font-face {
+  	font-family: Nunito;
+  	src: url(../fonts/Nunito-Regular.ttf);
+  	font-display: swap;
+}
+@font-face {
+  	font-family: Nunito Semi;
+  	src: url(../fonts/Nunito-SemiBold.ttf);
+}
+@font-face {
+  	font-family: Nunito Bold;
+  	font-weight: 600;
+  	src: url(../fonts/Nunito-Bold.ttf);
+  	font-display: swap;
+}
+@font-face {
+  	font-family: Nunito Black;
+  	src: url(../fonts/Nunito-Black.ttf);
+}
+
+
+html {
+
+}
+body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #FFFFFF;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+button, textarea, input, a {
+	-webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+	    -ms-transition: all 0.5s;
+	     -o-transition: all 0.5s;
+	        transition: all 0.5s;
+	outline: none !important;
+}
+
+/* components */
+.content {
+	padding: 30px 0;
+}
+.content h1.heading {
+	font-weight: 600;
+	color: #555555;
+	text-align: center;
+	font-size: 26px;
+}
+.content .text {
+	font-size: 16px;
+	color: #555555;
+	line-height: 20px;
+	margin: 20px 0;
+}
+.content .text p {
+	margin-bottom: 5px;
+}
+.btn-play {
+	background: #FF6363;
+	border-radius: 25px;
+	font-family: 'Nunito Bold';
+	font-size: 20px;
+	color: #FFFFFF;
+	display: table;
+	padding: 8px 60px;
+	margin: 0 auto 20px;
+}
+.btn-play:hover {
+	color: #FFFFFF;
+	background-color: #ec3f3f;
+}
+.btn-play:focus {
+	box-shadow: none;
+}
+.lottery-icon-play {
+	width: 60px;
+	height: 70px;
+	background: url(../images/play.png);
+}
+.lottery-icon-dollar {
+	width: 40px;
+	height: 70px;
+	background: url(../images/dollar.png);
+}
+.lottery-icon-ticket {
+	width: 70px;
+	height: 70px;
+	background: url(../images/ticket.png);
+}
+.lottery-icon-money {
+	width: 70px;
+	height: 70px;
+	background: url(../images/money.png);
+}
+.btn-loto {
+	background: #FF6363;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-size: 14px;
+    float: right;
+}
+/* header */
+ul.header-nav li a {
+	color: #63BDFF;
+	font-size: 20px;
+	font-weight: 600;
+}
+ul.header-nav li a:hover {
+	color: #9A2EBF;
+}
+/* slider */
+#slider {
+	height: 375px;
+	width: 100%;
+	background: url(../images/slider.webp) no-repeat;
+}
+.slider-info {
+	height: 375px;
+	background-color: rgba(154, 46, 191, 0.5);
+}
+.slider-info h1 {
+	font-family: Nunito Bold;
+	font-size: 36px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 20px 0 0;
+	margin-bottom: 0;
+}
+.slider-info p {
+	font-family: Nunito Bold;
+	font-size: 24px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 0;
+}
+.slider-info img {
+	margin: 0 auto;
+	display: flex;
+}
+.slider-info span {
+	font-family: Nunito Bold;
+	font-size: 36px;
+	color: #FF6363;
+	display: block;
+	text-align: center;
+	margin: 5px 0 5px;
+}
+/* carousel */
+#carousel-loto {
+	margin-top: 25px;
+}
+.in-carousel-box {
+	height: 385px;
+	border: 1px solid #D6D6D6;
+	transition: all 0.5s;
+}
+.in-carousel-box:hover {
+	border: 1px solid #FF6363;
+}
+.carousel-box:focus {
+	outline: none;
+}
+.carousel-btn {
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	display: block;
+	border: none;
+	background-color: transparent;
+}
+.carousel-btn-prev {
+	left: -50px;
+}
+.carousel-btn-next {
+	right: -50px;
+}
+.carousel-btn svg {
+	height: 50px;
+	width: 50px;
+	color: #63BDFF;
+	border: 4px solid #64BDFF;
+	border-radius: 50%;
+}
+.carousel-btn:hover svg {
+	background-color: #63BDFF;
+	color: #FFFFFF;
+}
+.cb-logo {
+	height: 160px;
+	width: 100%;
+	background-color: #FF6363;
+}
+.cb-logo img {
+	margin: 0 auto;
+}
+.in-carousel-box span.cb-name {
+	font-family: 'Nunito Bold';
+	font-size: 24px;
+	display: block;
+	text-align: center;
+	margin: 5px 0 10px;
+	height: 36px;
+    overflow: hidden;
+}
+.in-carousel-box span.cb-jackpot {
+	font-family: 'Nunito Bold';
+	font-size: 36px;
+	display: block;
+	text-align: center;
+	margin: 5px 0 10px;
+	color: #9A2EBF;
+}
+.in-carousel-box p {
+	font-size: 14px;
+	text-align: center;
+}
+.in-carousel-box p span {
+	font-family: 'Nunito Bold';
+	border-bottom: 1px solid #363636;
+	color: #363636;
+}
+ul.slick-dots {
+	display: table;
+	margin: 20px auto;
+}
+ul.slick-dots li {
+	display: inline-block;
+	margin: 0 5px;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: #63BDFF;
+	cursor: pointer;
+}
+ul.slick-dots li.slick-active {
+	background-color: #9A2EBF;
+}
+ul.slick-dots li button {
+ 	display: none;
+}
+/* faq */
+#faq {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+.lottery-icon {
+	display: block;
+	margin: 30px auto 15px;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+}
+.faq-box:hover .lottery-icon {
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	     -o-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+p.fb-name {
+	font-family: Nunito Bold;
+	font-size: 24px;
+	line-height: 22px;
+	text-align: center;
+	color: #5E5E5E;
+	height: 44px;
+	padding: 10px 30px 0;
+	margin-bottom: 20px;
+}
+p.fb-text {
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	color: #606060;
+}
+.faq-box a {
+	font-family: Nunito Bold;
+	font-size: 18px;
+	text-align: center;
+	color: #63BDFF;
+	display: block;
+}
+.faq-box a svg {
+	margin-left: 10px;
+}
+.faq-box a:hover {
+	color: #9A2EBF;
+}
+/* last results lottery */
+#last-results {
+	background-color: #F2F2F2;
+	padding: 20px 0 50px;
+}
+.last-results-name {
+	font-family: Nunito Bold;
+	font-size: 30px;
+	color: #000000;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.lr-name {
+	font-family: Nunito Bold;
+	font-size: 24px;
+	color: #000000;
+	margin: 10px 0;
+}
+.in-last-lottery,
+.in-last-winners {
+	border-radius: 15px;
+	background-color: #FFFFFF;
+	padding: 10px 30px;
+}
+.table-last-lottery td,
+.table-last-lottery th {
+    padding: 10px 0;
+    vertical-align: top;
+    border-top: none;
+}
+.table-last-lottery thead th {
+    vertical-align: bottom;
+    border-bottom: none;
+    color: #898989;
+    font-size: 18px;
+}
+.table-last-lottery tbody tr {
+	border-bottom: 20px solid transparent;
+}
+.table-last-lottery tbody tr td.lottery,
+.table-last-lottery tbody tr td.date {
+	vertical-align: middle;
+}
+.table-last-lottery tbody tr td.lottery img {
+	width: 40px;
+	height: 20px;
+	margin-right: 20px;
+}
+.table-last-lottery tbody tr td.lottery span {
+	font-family: Nunito Bold;
+	font-size: 16px;
+	color: #363636;
+}
+.table tbody tr td.results span {
+	background: #63BDFF;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px;
+    margin: 0 5px;
+}
+.table tbody tr td.results span.special {
+	background: #00D315;
+}
+.table tbody tr td.results span.bonus {
+	background: #FF6363;
+}
+.table tbody tr td.results span.extra {
+	background: #9A2EBF;
+}
+.table-latest thead tr {
+	background-color: #dee2e6;
+	font-weight: 600;
+	font-size: 16px;
+	color: #555555;
+}
+.table-latest td img {
+	margin-right: 10px;
+}
+.table-latest td.name {
+	font-weight: 600;
+	font-size: 14px;
+	color: #555555;
+}
+.table-latest td.date {
+	font-size: 14px;
+	color: #777777;
+	font-weight: 600;
+}
+.table-latest td.jackpot {
+	font-size: 18px;
+	font-weight: 700;
+	color: #9A2EBF;
+}
+.table-latest td.jackpot span {
+	font-size: 13px;
+}
+.table-latest tbody tr td.results span {
+	background: #63BDFF;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 3px 3px 2px;
+    margin: 0 2px;
+}
+.table-latest td.closed span {
+	font-weight: 700;
+	font-size: 14px;
+}
+
+
+.ill-more {
+	text-align: center;
+	margin-bottom: 35px;
+}
+.ill-more a {
+	font-family: Nunito Bold;
+	font-size: 18px;
+	color: #FF6363;
+	background-color: #FFFFFF;
+	border: 3px solid #FF6363;
+	border-radius: 28px;
+	padding: 12px 34px;
+	display: inline-block;
+}
+.ill-more a:hover {
+	background-color: #ff6363;
+	color: #ffffff;
+}
+.in-last-winners {
+	padding: 10px 20px;
+}
+.in-last-winners .lr-name {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.last-winners-box {
+	margin-bottom: 15px;
+}
+.lwb-name {
+	margin-bottom: 10px;
+}
+.lwb-name span.country {
+	width: 40px;
+	height: 20px;
+}
+.lwb-name span.country img {
+	width: 40px;
+	height: 20px;
+}
+.lwb-name span.name {
+	font-family: Nunito Bold;
+	font-size: 18px;
+	color: #63BDFF;
+	margin-left: 20px;
+}
+.lwb-date {
+	margin-bottom: 5px;
+}
+.lwb-date span.lottery {
+	font-family: Nunito Bold;
+	font-size: 16px;
+	color: #000000;
+}
+.lwb-date span.date {
+	font-family: Nunito;
+    font-size: 12px;
+    color: #555;
+    float: right;
+}
+.lwb-price {
+	font-family: Nunito Bold;
+	font-size: 18px;
+	color: #00D315;
+}
+/* recommend */
+#recommend {
+	padding: 30px 0;
+}
+.recommend-name {
+	font-family: Nunito Bold;
+	font-size: 30px;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 30px;
+}
+.recommend-box {
+	margin-bottom: 30px;
+}
+.in-recommend-box {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 25px -5px #898989;
+	border-radius: 15px;
+}
+.irb-top {
+	padding: 15px;
+	border-bottom: 1px solid #d6d6d6;
+}
+.irb-top span.img {
+	max-width: 200px;
+	display: inline-block;
+}
+.irb-top span.img img {
+	width: 100%;
+	height: auto;
+}
+.irb-top span.price {
+	font-family: Nunito Bold;
+	font-size: 36px;
+	color: #FF6363;
+	display: inline-block;
+	padding: 10px 0 0;
+}
+.irb-bottom {
+	text-align: center;
+	padding: 30px 0;
+}
+.irb-bottom a {
+	font-family: Nunito Bold;
+	font-size: 20px;
+	color: #FFFFFF;
+	background: #63BDFF;
+	border-radius: 25px;
+	padding: 10px 65px;
+}
+.irb-bottom a:hover {
+	background-color: #0093FE;
+}
+/* text */
+#text {
+	padding: 15px 0 50px;
+}
+/* footer */
+#footer {
+	background-color: #F2F2F2;
+	padding: 40px 0 20px;
+}
+
+.ages {
+	text-align: center;
+	margin: 35px 0 30px;
+}
+.ages span {
+	border: 1px solid #000000;
+	color: #000000;
+	border-radius: 50%;
+	padding: 12px 10px;
+}
+.footer-menu {
+	text-align: right;
+	margin: 15px 0 15px;
+}
+.footer-menu li {
+	display: inline-block;
+	margin: 0 10px;
+}
+.footer-menu li a {
+	color: #63BDFF;
+	font-size: 22px;
+	font-family: Nunito Bold;
+}
+.footer-menu li a:hover {
+	color: #9A2EBF;
+}
+.second-footer-menu ul li a {
+	color: #555555;
+}
+.second-footer-menu ul li a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+.footer-list {
+	/*text-align: right;*/
+	margin-top: 30px;
+	display: flex;
+}
+.footer-list li {
+	display: inline-block;
+	margin: 0 20px;
+}
+.footer-list li svg {
+	color: #898989;
+	height: 26px;
+	width: auto;
+	margin-right: 10px;
+}
+.footer-list li span {
+
+}
+.copy {
+	background-color: #D6D6D6;
+	text-align: center;
+	color: #898989;
+	padding: 10px 0;
+	font-family: Nunito Bold;
+}
+.lt-time {
+	font-weight: 700;
+}
+.lt-time span.timer-close {
+	margin-top: 15px;
+    display: block;
+}
+
+.lt-rating svg {
+	width: 50px;
+	height: 50px;
+	color: #9A2EBF;
+}
+.lt-rating span {
+	position: absolute;
+	left: 50%;
+	margin-left: -5px;
+	font-weight: 700;
+	color: #ffffff;
+	top: 15px;
+}
+.lt-jackpot span {
+	font-size: 36px;
+	font-weight: 700;
+	color: #9A2EBF;
+}
+span.ltj-cur {
+	font-size: 18px;
+    color: #555;
+    margin-right: 5px;
+}
+
+
+ul.why-we {
+	margin: 20px 0;
+	padding: 20px;
+	background-color: #fafafa;
+	border-radius: 5px;
+	border: 1px solid #dddddd;
+}
+ul.why-we li {
+	display: flex;
+	margin-bottom: 15px;
+}
+ul.why-we li i {
+	width: 50px !important;
+	height: 47px !important;
+	text-align: center;
+	font-size: 30px;
+	color: #ffffff;
+	border-radius: 50%;
+	background-color: #9A2EBF;
+	padding-top: 10px;
+}
+ul.why-we li span {
+	width: 75%;
+	margin-left: 15px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #333333;
+	padding-top: 10px;
+}
+
+
+
+p.info span.name {
+	display: block;
+    margin: 15px 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+
+/*  blog */
+.blog-post {
+	display: flex;
+	margin: 25px 0;
+	border-radius: 5px;
+	border: 1px solid #dddddd;
+	padding: 15px;
+}
+.blog-post:hover {
+	border: 1px solid #63BDFF;
+}
+.blog-post-img {
+	width: 25%;
+	margin-right: 5%;
+}
+.blog-post-img img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+.blog-post-body {
+	width: 70%;
+}
+.blog-post-body a {
+	float: right;
+    font-family: Nunito Bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #63BDFF;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

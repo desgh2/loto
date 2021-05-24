@@ -1,0 +1,11 @@
+body {
+
+}
+
+.has-error input,
+.has-error textarea {
+	border: 2px solid #f5c6cb;
+}
+label {
+	font-weight: 700;
+}
